@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500&display=swap');
+
+body h1 {
+  color: #fff; /* Mantém o texto branco */
+  font-family: 'Oswald', sans-serif; /* Fonte do Oswald para h1 */
+  margin: 0; /* Remove a margem padrão */
+  font-weight: 600;
+  font-size: 72px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0;
+  line-height: 1.2;
+  letter-spacing: 0.02rem;
+  text-align: left;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2),
+    -1px -1px 2px rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  body h1 {
+    font-size: 36px; /* Tamanho da fonte ajustado para telas menores */
+    line-height: 1.1; /* Ajuste do espaçamento entre linhas para telas menores */
+    text-shadow: 0.5px 0.5px 1px rgba(255, 255, 255, 0.2),
+      -0.5px -0.5px 1px rgba(255, 255, 255, 0.2);
+    padding: 0 10px; /* Adiciona um pouco de padding nas laterais para não tocar as bordas */
+  }
+}
+
+.primaria {
+  color: #0d3878;
+}
+
+.right-aligned-nav {
+  padding-right: 0;
+}
+
+.navbar-collapse {
+  justify-content: space-between;
+}
+
+.navbar .container-fluid {
+  padding-right: 120px;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  text-align: left;
+}
+
+.carousel-item {
+  background: no-repeat center center scroll;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin: 1px;
+}
+
+.carousel-indicators .active {
+  background-color: #666;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .carousel-caption {
+    left: 5%;
+    right: 5%;
+  }
+}
+
+h1 {
+  font-family: 'Mont Serrat', sans-serif;
+  font-size: 2.5em;
+  font-weight: bolder;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+  text-shadow: 2px 2px 2px #000;
+  color: #fff;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  text-align: left;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #fff;
+  margin: 1px;
+}
+
+.carousel-indicators .active {
+  background-color: #666;
+}
+
+.custom-btn {
+  background-color: #007bff; /* Use your brand color here */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  /* Ajuste para dispositivos móveis */
+  .carousel-item {
+    transition: opacity 0.5s ease-in-out;
+  }
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .carousel-caption {
+    left: 5%;
+    right: 5%;
+  }
+}
+
+h1 {
+  color: #fff;
+  font-size: 3.5em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.client-carousel-section {
+  background-color: white; /* Adjust background color as needed */
+  padding: 20px 0;
+}
+
+.client-logo {
+  height: 50px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.client-logo:hover {
+  filter: grayscale(0);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+.service-card {
+  border-radius: 8px;
+  border: 3px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #666;
+  padding: 0 0 1rem 0;
+}
+
+.service-card .custom-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.service-card .custom-button:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+.btn-secondary {
+  color: #000;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  margin: 0 30px; /* Increased spacing between buttons */
+}
+
+.btn-secondary:hover {
+  background-color: #d6d6d6;
+}
+
+.btn-link {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  object-fit: cover;
+}
+
+.card-body {
+  text-align: center;
+}
